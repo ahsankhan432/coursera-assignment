@@ -1,0 +1,132 @@
+h1{
+    text-align: center;
+}
+.box1{
+    border: 2px solid black;
+    width: 30%;
+    height: 143px;
+    overflow: hidden;
+}
+.box2{
+    border: 2px solid black;
+    width: 30%;
+    height: 143px;
+    overflow: hidden;
+}
+.box3{
+    border: 2px solid black;
+    width: 30%;
+    height: 143px;
+    overflow: hidden;
+    text-align: center;
+}
+.container{
+    height: 344px;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media only  screen and (max-width:767px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .box1{
+        width: fit-content;
+        margin-bottom: 8px;
+    }
+   .box2{
+    width: fit-content;
+    margin-bottom:8px ;
+   }
+   .box3{
+    width: fit-content;
+    margin-bottom: 8px;
+   }
+   .box1 #box1s{
+    position: relative;
+    left: 0px;
+   }
+   .box2 #box2s{
+    position: relative;
+    left: 0px;
+   }
+   .box3 #box3s{
+    position:absolute;
+    left: 10px;
+   }
+
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        
+
+    }
+    .box1 , .box2{
+        width: 35vw;
+    }
+    .container .box3{
+        position: relative;
+        top: 3%;
+        width: 90vw;
+        
+    }
+   
+    .box1 #box1s{
+        position:absolute;
+   ;
+    }
+    .box2 #box2s{
+        position:absolute;
+        left: 54.8%;
+    }
+    .box3 #box3s{
+        position: absolute;
+        left: 0px;
+    }
+  
+}
+   /* .box1 , .box2{
+    position: relative;
+    left: 15%;
+    width: max-content;
+    margin-right: 21px;
+   }
+    .box1 , {
+        position: relative;
+        top: 30%;
+    } */
+
+#box1s{
+    position: absolute;
+    left: 27%;
+    width: auto;
+    background-color: rgb(255, 57, 57);
+    color: blue;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+#box2s{
+    position: absolute;
+    left: 35.5%;
+    width: auto;
+    background-color: blue;
+    color: blanchedalmond;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+#box3s{
+    position:absolute;
+    left:67.5% ;
+    width:auto;
+    background-color: aqua;
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
